@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "RestApiAugust25",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
