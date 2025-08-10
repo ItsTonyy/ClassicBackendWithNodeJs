@@ -32,6 +32,6 @@ app.get('/dashboard', (req: Request, res: myRequest) => {
 // Type 2 - API endpoints, sends data when requested (non-visual)
 
 app.get('/api/data', (req: Request, res: myRequest) => {
-  console.log('sending data...')
+  console.log('sending data...', req.method)
   res.send(data)
 })
