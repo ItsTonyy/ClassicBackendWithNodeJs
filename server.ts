@@ -4,6 +4,9 @@ import type {Request, Response} from 'express'
 const app = express()
 const PORT = 3000
 
+//middleware
+app.use(express.json())
+
 const data = { 
   name: 'Tony',
   language: 'Nodejs',
@@ -34,4 +37,5 @@ app.get('/api/data', (req: Request, res: Response) => {
 
 app.post('/api/data', (req: Request, res: Response) => {
   const reqBody = req.body
+  res.status(201)
 })

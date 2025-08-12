@@ -8,15 +8,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsnd --respawn server.ts"
+    "dev": "nodemon server.ts"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.2.0",
     "express": "^5.1.0",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "ts-node-dev": "^2.0.0"
+    "nodemon": "^3.1.10"
   }
 }
