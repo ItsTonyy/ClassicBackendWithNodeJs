@@ -1,5 +1,5 @@
-import type {Request, Response} from 'express'
 import express from 'express'
+import type {Request, Response} from 'express'
 
 const app = express()
 const PORT = 3000
@@ -9,7 +9,6 @@ const data = {
   language: 'Nodejs',
   framework: 'Express.js'
 }
-
 
 app.listen(PORT, () => console.log(`backend is running on PORT ${PORT}`))
 
@@ -31,4 +30,8 @@ app.get('/dashboard', (req: Request, res: Response) => {
 app.get('/api/data', (req: Request, res: Response) => {
   console.log('sending data...', req.method)
   res.send(data)
+})
+
+app.post('/api/data', (req: Request, res: Response) => {
+  const reqBody = req.body
 })
