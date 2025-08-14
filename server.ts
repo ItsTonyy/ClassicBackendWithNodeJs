@@ -9,8 +9,6 @@ app.use(express.json())
 
 const data = { 
   name: 'Tony',
-  language: 'Nodejs',
-  framework: 'Express.js'
 }
 
 app.listen(PORT, () => console.log(`backend is running on PORT ${PORT}`))
@@ -20,7 +18,7 @@ app.listen(PORT, () => console.log(`backend is running on PORT ${PORT}`))
 app.get('/', (req: Request, res: Response) => {
   console.log('default endpoint hitted', req.method)
   res.status(200)
-  res.send('<h1> This is the homepage <h1/>')
+  res.send('<body style="background-color: pink"><h1> FINALMENTE PORRA <h1/></body>')
 })  
 
 app.get('/dashboard', (req: Request, res: Response) => {
