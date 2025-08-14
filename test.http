@@ -10,6 +10,10 @@ GET http://localhost:3000/api/data
 ### DATA ENDPOINT FOR CREATING A USER
 POST http://localhost:3000/api/data
 Content-Type: application/json
+
 { 
   "name": "Atreus"
 }
+
+### DELETE LAST ELEMENT FROM DATA
+DELETE http://localhost:3000/api/data
