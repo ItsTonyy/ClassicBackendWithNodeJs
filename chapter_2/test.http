@@ -12,7 +12,7 @@ POST http://localhost:3000/api/data
 Content-Type: application/json
 
 { 
-  "name": "Atreus"
+  "name": "Thor"
 }
 
 ### DELETE LAST ELEMENT FROM DATA
