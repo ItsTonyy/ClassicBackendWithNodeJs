@@ -43,7 +43,9 @@
 
     // handling the import/export problems
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
   },
 
   "ts-node": {
